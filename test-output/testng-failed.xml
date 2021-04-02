@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegressionTestOrangeHRM(failed)">
+    <classes>
+      <class name="com.orangehrm.testcases.OrangeHrmTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="setupReport"/>
+          <include name="setup"/>
+          <include name="ResetPwdWithOutData" invocation-numbers="0"/>
+          <include name="verifyValidLogin" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.orangehrm.testcases.OrangeHrmTest -->
+    </classes>
+  </test> <!-- RegressionTestOrangeHRM(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

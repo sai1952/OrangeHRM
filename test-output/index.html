@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
+              <span class="suite-name border-failed">RegressionSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
+                    <span>D:\OrangeHRMProject\TestRunner\OrangeHRMRegressionSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-RegressionSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-RegressionSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-RegressionSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-RegressionSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-RegressionSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-RegressionSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="ResetPwdWithOutData({})">ResetPwdWithOutData({})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="verifyValidLogin({Username=sai, Password=kumar})">verifyValidLogin({Username=sai, Password=kumar})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods passed suite-RegressionSuite"> (hide)</a> <!-- hide-methods passed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="Cancel">Cancel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="InvalidPwd({Username=Admin, Password=ZZZZ})">InvalidPwd({Username=Admin, Password=ZZZZ})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="InvalidUsername({Username=zzzzz, Password=admin123})">InvalidUsername({Username=zzzzz, Password=admin123})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="ResetPwdWitheData({Username=Admin})">ResetPwdWitheData({Username=Admin})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="ResetPwdWitheWrongData({Username=AAAA})">ResetPwdWitheWrongData({Username=AAAA})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="VerifyFaceBookBtn">VerifyFaceBookBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="VerifyForgotPwdLink">VerifyForgotPwdLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="VerifyLinkeDin">VerifyLinkeDin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="YoutubeBtn">YoutubeBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.orangehrm.testcases.OrangeHrmTest" class="method navigator-link" hash-for-method="verifyValidLogin({Username=Admin, Password=admin123})">verifyValidLogin({Username=Admin, Password=admin123})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.testcases.OrangeHrmTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetPwdWithOutData({})">
+                  </a> <!-- ResetPwdWithOutData({}) -->
+                  <span class="method-name">ResetPwdWithOutData</span>
+                  <span class="parameters">({})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at com.orangehrm.framework.webdriver.BasePage.UpdateDataIntoField(BasePage.java:59)
+	at com.orangehrm.pages.ForgotPwdPage.ResetPwdWithOutData(ForgotPwdPage.java:69)
+	at com.orangehrm.testcases.OrangeHrmTest.ResetPwdWithOutData(OrangeHrmTest.java:69)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidLogin({Username=sai, Password=kumar})">
+                  </a> <!-- verifyValidLogin({Username=sai, Password=kumar}) -->
+                  <span class="method-name">verifyValidLogin</span>
+                  <span class="parameters">({Username=sai, Password=kumar})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login is not Successful
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.orangehrm.pages.LoginPage.AppLogin(LoginPage.java:84)
+	at com.orangehrm.testcases.OrangeHrmTest.verifyValidLogin(OrangeHrmTest.java:18)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.testcases.OrangeHrmTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Cancel">
+                  </a> <!-- Cancel -->
+                  <span class="method-name">Cancel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidPwd({Username=Admin, Password=ZZZZ})">
+                  </a> <!-- InvalidPwd({Username=Admin, Password=ZZZZ}) -->
+                  <span class="method-name">InvalidPwd</span>
+                  <span class="parameters">({Username=Admin, Password=ZZZZ})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidUsername({Username=zzzzz, Password=admin123})">
+                  </a> <!-- InvalidUsername({Username=zzzzz, Password=admin123}) -->
+                  <span class="method-name">InvalidUsername</span>
+                  <span class="parameters">({Username=zzzzz, Password=admin123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetPwdWitheData({Username=Admin})">
+                  </a> <!-- ResetPwdWitheData({Username=Admin}) -->
+                  <span class="method-name">ResetPwdWitheData</span>
+                  <span class="parameters">({Username=Admin})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetPwdWitheWrongData({Username=AAAA})">
+                  </a> <!-- ResetPwdWitheWrongData({Username=AAAA}) -->
+                  <span class="method-name">ResetPwdWitheWrongData</span>
+                  <span class="parameters">({Username=AAAA})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyFaceBookBtn">
+                  </a> <!-- VerifyFaceBookBtn -->
+                  <span class="method-name">VerifyFaceBookBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyForgotPwdLink">
+                  </a> <!-- VerifyForgotPwdLink -->
+                  <span class="method-name">VerifyForgotPwdLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLinkeDin">
+                  </a> <!-- VerifyLinkeDin -->
+                  <span class="method-name">VerifyLinkeDin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="YoutubeBtn">
+                  </a> <!-- YoutubeBtn -->
+                  <span class="method-name">YoutubeBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidLogin({Username=Admin, Password=admin123})">
+                  </a> <!-- verifyValidLogin({Username=Admin, Password=admin123}) -->
+                  <span class="method-name">verifyValidLogin</span>
+                  <span class="parameters">({Username=Admin, Password=admin123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\OrangeHRMProject\TestRunner\OrangeHRMRegressionSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegressionTestOrangeHRM&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.orangehrm.testcases.OrangeHrmTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyValidLogin&quot;/&gt;
+          &lt;include name=&quot;InvalidUsername&quot;/&gt;
+          &lt;include name=&quot;InvalidPwd&quot;/&gt;
+          &lt;include name=&quot;VerifyForgotPwdLink&quot;/&gt;
+          &lt;include name=&quot;VerifyLinkeDin&quot;/&gt;
+          &lt;include name=&quot;VerifyFaceBookBtn&quot;/&gt;
+          &lt;include name=&quot;YoutubeBtn&quot;/&gt;
+          &lt;include name=&quot;ResetPwdWithOutData&quot;/&gt;
+          &lt;include name=&quot;ResetPwdWitheData&quot;/&gt;
+          &lt;include name=&quot;ResetPwdWitheWrongData&quot;/&gt;
+          &lt;include name=&quot;Cancel&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.orangehrm.testcases.OrangeHrmTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegressionTestOrangeHRM --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">RegressionTestOrangeHRM (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyValidLogin')
+data.setCell(0, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(0, 3, 26081);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyValidLogin')
+data.setCell(1, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(1, 3, 17853);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'InvalidPwd')
+data.setCell(2, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(2, 3, 15523);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'InvalidUsername')
+data.setCell(3, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(3, 3, 15299);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'VerifyFaceBookBtn')
+data.setCell(4, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(4, 3, 11819);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'YoutubeBtn')
+data.setCell(5, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(5, 3, 11268);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ResetPwdWitheData')
+data.setCell(6, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(6, 3, 11091);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ResetPwdWitheWrongData')
+data.setCell(7, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(7, 3, 11011);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Cancel')
+data.setCell(8, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(8, 3, 10548);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifyLinkeDin')
+data.setCell(9, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(9, 3, 10384);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ResetPwdWithOutData')
+data.setCell(10, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(10, 3, 10057);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifyForgotPwdLink')
+data.setCell(11, 2, 'com.orangehrm.testcases.OrangeHrmTest')
+data.setCell(11, 3, 9788);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testcases.OrangeHrmTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">490 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyValidLogin({Username=Admin, Password=admin123})</span>
+                <span class="method-start">1437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">19291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyValidLogin({Username=sai, Password=kumar})</span>
+                <span class="method-start">20337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">46420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">46668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InvalidUsername({Username=zzzzz, Password=admin123})</span>
+                <span class="method-start">47426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">62726 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InvalidPwd({Username=Admin, Password=ZZZZ})</span>
+                <span class="method-start">63620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">79144 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">79351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyForgotPwdLink</span>
+                <span class="method-start">80050 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">89839 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">90029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyLinkeDin</span>
+                <span class="method-start">90762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">101147 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">101375 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyFaceBookBtn</span>
+                <span class="method-start">102155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">113975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">114213 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">YoutubeBtn</span>
+                <span class="method-start">114910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">126180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">126462 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ResetPwdWithOutData({})</span>
+                <span class="method-start">127166 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">137224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">137449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ResetPwdWitheData({Username=Admin})</span>
+                <span class="method-start">138130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">149222 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">149429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ResetPwdWitheWrongData({Username=AAAA})</span>
+                <span class="method-start">150156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">161168 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">161399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Cancel</span>
+                <span class="method-start">162134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">172683 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

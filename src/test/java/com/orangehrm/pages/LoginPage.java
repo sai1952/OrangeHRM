@@ -217,6 +217,7 @@ public class LoginPage extends BasePage {
 		
 		String parent = driver.getWindowHandle();
 		Click(YoutubeBtn);
+		System.out.println("Click on youtube button sucessfull");
 		Set<String> s = driver.getWindowHandles();
 
 		int count = s.size();
